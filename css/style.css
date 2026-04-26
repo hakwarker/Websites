@@ -17,3 +17,14 @@ h1 {
     40% {transform: translateY(-30px);}
     60% {transform: translateY(-15px);}
 }
+/* ធ្វើឱ្យអក្សរលោតឡើងលើចុះក្រោម */
+h1 {
+    display: inline-block;
+    animation: bounce 1.5s infinite;
+    color: #3498db;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
