@@ -12,7 +12,7 @@ body {
 
 /* កូដធ្វើឱ្យអក្សរលោត */
 .bounce-text {
-    font-size: 3rem;
+    font-size: 2rem;
     color: white;
     display: inline-block; /* សំខាន់ណាស់៖ បើអត់ដាក់ inline-block វាអត់លោតទេ */
     animation: bounce 1.5s ease-in-out infinite;
