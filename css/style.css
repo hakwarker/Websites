@@ -28,3 +28,14 @@ h1 {
 #colorButton:active {
     transform: scale(0.95);
 }
+body {
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; /* តម្រៀបពីលើចុះក្រោម */
+    justify-content: center; /* ចំកណ្តាលបញ្ឈរ */
+    align-items: center;    /* ចំកណ្តាលផ្ដេក */
+    text-align: center;
+    margin: 0;
+    gap: 20px; /* បង្កើតចន្លោះរវាងអក្សរ និងប៊ូតុង */
+}
