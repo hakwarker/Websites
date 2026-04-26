@@ -1,30 +1,15 @@
 body {
-    font-family: sans-serif;
-    background-color: #f4f4f4;
-    text-align: center;
-    padding: 50px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 0;
 }
 
 h1 {
-    color: #2c3e50;
-}
-h1 {
-    animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-    40% {transform: translateY(-30px);}
-    60% {transform: translateY(-15px);}
-}
-/* ធ្វើឱ្យអក្សរលោតឡើងលើចុះក្រោម */
-h1 {
-    display: inline-block;
-    animation: bounce 1.5s infinite;
-    color: #3498db;
-}
-
-@keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
+    font-size: 3rem;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.2);
 }
