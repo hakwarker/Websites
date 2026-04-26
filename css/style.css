@@ -1,41 +1,51 @@
+/* កំណត់ទម្រង់ទូទៅនៃទំព័រ */
 body {
     background: linear-gradient(135deg, #71b7e6, #9b59b6);
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
+    flex-direction: column; /* តម្រៀបពីលើចុះក្រោម */
+    justify-content: center; /* នៅចំកណ្តាលបញ្ឈរ */
+    align-items: center;    /* នៅចំកណ្តាលផ្ដេក */
+    text-align: center;
     margin: 0;
+    gap: 30px; /* បង្កើតចន្លោះរវាងអក្សរ និងប៊ូតុង */
+    transition: background 0.5s ease; /* ធ្វើឱ្យពេលដូរពណ៌ទៅជាប្លែកៗមើលទៅរលូន */
 }
 
+/* ធ្វើឱ្យអក្សរ "សួស្តីពិភពលោក" លោតឡើងវិញ */
 h1 {
     font-size: 3rem;
-    text-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    color: white;
+    margin: 0;
+    animation: bounce 1.5s infinite; /* ដាក់ចលនាឱ្យលោតរហូត */
 }
+
+/* កូដបញ្ជាចលនាលោត */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+/* រចនាអក្សររត់ Marquee */
+marquee {
+    color: #f1f1f1;
+    width: 80%;
+    font-style: italic;
+}
+
+/* រចនាប៊ូតុងឱ្យស្អាត */
 #colorButton {
     padding: 15px 30px;
     font-size: 18px;
     background-color: #2ecc71;
     color: white;
     border: none;
-    border-radius: 10px;
+    border-radius: 50px; /* ធ្វើឱ្យប៊ូតុងរាងមូលស្អាត */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     cursor: pointer;
-    margin-top: 20px;
     transition: 0.3s;
 }
 
 #colorButton:active {
-    transform: scale(0.95);
-}
-body {
-    background: linear-gradient(135deg, #71b7e6, #9b59b6);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column; /* តម្រៀបពីលើចុះក្រោម */
-    justify-content: center; /* ចំកណ្តាលបញ្ឈរ */
-    align-items: center;    /* ចំកណ្តាលផ្ដេក */
-    text-align: center;
-    margin: 0;
-    gap: 20px; /* បង្កើតចន្លោះរវាងអក្សរ និងប៊ូតុង */
+    transform: scale(0.9); /* ពេលចុចទៅឱ្យវាស្រុតចុះបន្តិច */
 }
